@@ -1,0 +1,142 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    color: #4f524f;
+}
+
+img {
+    width: 100px;
+}
+
+.hero{
+    background-image: url('images/zocalo-full.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-city{
+    margin-top: 150px;
+    padding: 25px;
+    color: #90f0e8;
+    font-size: 52px;
+    text-shadow: 0 0 10px #0f0e0f;
+}
+
+
+.intro-city{
+    color: #fff;
+    padding: 20px;
+    font-size: 28px;
+    text-shadow: 0 0 5px black;
+}
+
+.activities-wrapper{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(244, 244, 47);
+    animation-name: activities;
+    animation-duration: 10s;
+}
+
+.top-activities-title{
+    margin: 70px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #3b353b;
+    border-bottom: 2px solid #fff;
+}
+
+.img-activities{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-activity{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.activity{
+    width: 400px;
+}
+
+.highlight-description{
+    font-size: 16px;
+    text-align: center;
+    padding: 30px;
+}
+
+.highlight-description:hover{
+    font-size: 18px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.card{
+    width: 400px;
+    margin: 50px auto 100px auto;
+    background-color: #90f0e8;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #4f524f;
+}
+
+.info-card{
+    padding: 0 20px;
+}
+
+.avatar{
+    width: 200px;
+}
+
+@keyframes activities {
+    from {background-color: rgb(116, 239, 175);}
+    to {background-color: rgb(244, 244, 47);}
+  }
+
+  @media screen and (max-width: 700px) {
+    .activities-wrapper{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(244, 244, 47);
+        animation-name: activities;
+        animation-duration: 10s;
+    }
+    
+    .top-activities-title{
+        margin-top: 70px;
+        font-size: 24px;
+    }
+
+    .img-activities{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
